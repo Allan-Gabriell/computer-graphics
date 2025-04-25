@@ -19,7 +19,7 @@ int gerarImagem(int width, int height){
 
   for (int i = 0; i < height; i++){ 
     for (int j = 0; j < width; j++){
-      fprintf(img, "%d \t %d \t %d \n", 0, 0, 0);
+      fprintf(img, "%d \t %d \t %d \n", 255, 255, 255);
       if(i == y_center && j == x_center) {
         fprintf(img, "%d \t %d \t %d \n", 255, 0, 0);
       }
@@ -29,8 +29,8 @@ int gerarImagem(int width, int height){
 }
 
 int main(){
-  int width = 100;
-  int height = 100;
+  int width = 5;
+  int height = 5;
 
   gerarImagem(width, height);
 

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-#define h 256
-#define w 256
+#define h 500
+#define w 500
 
 unsigned char img[h][w][3];
 
@@ -57,30 +57,53 @@ int main(){
     unsigned char blue = 255;
     unsigned char black = 0;
 
-    int left = w / 8;
-    int right = w * 7 / 8;
-    int top = h * 3 / 8;
-    int bottom = h * 5 / 8;
-    int roof_peak_y = h * 7 / 8;
-    int roof_peak_x = w / 2;
+    // int left = w / 8;
+    // int right = w * 7 / 8;
+    // int top = h * 3 / 8;
+    // int bottom = h * 5 / 8;
+    // int roof_peak_y = h * 7 / 8;
+    // int roof_peak_x = w / 2;
 
-    int door_left = w * 2 / 8;
-    int door_right = w * 3 / 8;
-    int door_top = h * 3 / 8;
-    int door_bottom = h * 4 / 8;
+    // int door_left = w * 2 / 8;
+    // int door_right = w * 3 / 8;
+    // int door_top = h * 3 / 8;
+    // int door_bottom = h * 4 / 8;
 
-    drawLine(left, top, right, top, black, black, blue);  
-    drawLine(left, bottom, right, bottom, black, black, blue); 
-    drawLine(left, top, left, bottom, black, black, blue);  
-    drawLine(right, top, right, bottom, black, black, blue);
+    // drawLine(left, top, right, top, black, black, blue);  
+    // drawLine(left, bottom, right, bottom, black, black, blue); 
+    // drawLine(left, top, left, bottom, black, black, blue);  
+    // drawLine(right, top, right, bottom, black, black, blue);
 
-    drawLine(left, bottom, roof_peak_x, roof_peak_y, black, black, blue);
-    drawLine(right, bottom, roof_peak_x, roof_peak_y, black, black, blue);
+    // drawLine(left, bottom, roof_peak_x, roof_peak_y, black, black, blue);
+    // drawLine(right, bottom, roof_peak_x, roof_peak_y, black, black, blue);
 
-    drawLine(door_left, door_top, door_left, door_bottom, black, black, blue);
-    drawLine(door_right, door_top, door_right, door_bottom, black, black, blue); 
-    drawLine(door_left, door_top, door_right, door_top, black, black, blue);
-    drawLine(door_left, door_bottom, door_right, door_bottom, black, black, blue);
+    // drawLine(door_left, door_top, door_left, door_bottom, black, black, blue);
+    // drawLine(door_right, door_top, door_right, door_bottom, black, black, blue); 
+    // drawLine(door_left, door_top, door_right, door_top, black, black, blue);
+    // drawLine(door_left, door_bottom, door_right, door_bottom, black, black, blue);
+
+    //cubo da casa
+    drawLine(150, 100, 350, 100, black, black, blue);
+    drawLine(100, 200, 400, 200, black, black, blue);
+    drawLine(150, 100, 150, 200, black, black, blue);
+    drawLine(350, 100, 350, 200, black, black, blue);
+
+    //porta da casa
+    drawLine(200, 100, 200, 150, black, black, blue);
+    drawLine(250, 100, 250, 150, black, black, blue);
+    drawLine(200, 150, 250, 150, black, black, blue);
+
+    //telhado da casa
+    drawLine(100, 200, 250, 300, black, black, blue);
+    drawLine(400, 200, 250, 300, black, black, blue);
+
+    //janela 
+    drawLine(280, 120, 320, 120, black, black, blue);
+    drawLine(280, 180, 320, 180, black, black, blue);
+    drawLine(280, 120, 280, 180, black, black, blue);
+    drawLine(320, 120, 320, 180, black, black, blue);
+    drawLine(300, 120, 300, 180, black, black, blue);
+    drawLine(280, 150, 320, 150, black, black, blue);
     saveIMg();
 
     return 0;

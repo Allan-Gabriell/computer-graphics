@@ -88,5 +88,14 @@ int main(){
     printf("O valor do produto interno dos dois vetores 2D é: %f\n", inner2D);
     printf("O valor do produto interno dos dois vetores 3D é: %f\n", inner3D);
 
+    printf("------------------------------------------------\n");
+
+    Point3D vectorC = {2, -4, 0};
+    Point3D vectorD = {5, 3, 0};
+
+    Point3D product = vectorProduct(vectorC, vectorD);
+
+    printf("O valor do produto vetorial dos dois vetores é: %f %f %f\n", product.x, product.y, product.z);
+
     return 0;
 }

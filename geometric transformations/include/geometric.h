@@ -46,5 +46,7 @@ Point3D unitVector3D(Point3D vector);
 float innerProduct2D(Point2D vector1, Point2D vector2);
 //Faz o cálculo do produto escalar de dois vetores 3D
 float innerProduct3D(Point3D vector1, Point3D vector2);
+//Faz o cálculo do produto vetorial de dois vetores 3D
+Point3D vectorProduct(Point3D vector1, Point3D vector2);
 
 #endif

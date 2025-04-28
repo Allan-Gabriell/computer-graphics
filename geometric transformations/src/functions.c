@@ -131,3 +131,12 @@ float innerProduct3D(Point3D vector1, Point3D vector2) {
     float product = ((vector1.x * vector2.x) + (vector1.y * vector2.y) + (vector1.z * vector2.z));
     return product;
 }
+
+Point3D vectorProduct(Point3D vector1, Point3D vector2) {
+    Point3D vectorFinal;
+    vectorFinal.x = ((vector1.y * vector2.z) - (vector1.z * vector2.y));
+    vectorFinal.y = ((vector1.z * vector2.x) - (vector1.x * vector2.z));
+    vectorFinal.z = ((vector1.x * vector2.y) - (vector1.y * vector2.x));
+
+    return vectorFinal;
+}

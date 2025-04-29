@@ -2,8 +2,8 @@
 #include "../include/geometric.h"
 
 int main(){
-    Point2D initial = {1.0, 2.0};
-    Point2D end = {4.0, 6.0};
+    Point2D initial = {2, 4};
+    Point2D end = {6, 2};
     Point2D vectorResult = vector2D(initial, end);
     printf("Vetor resultante 2D: (%f, %f)\n", vectorResult.x, vectorResult.y);
 

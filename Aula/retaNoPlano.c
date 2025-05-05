@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 #define h 500
 #define w 500
@@ -83,27 +84,28 @@ int main(){
     // drawLine(door_left, door_bottom, door_right, door_bottom, black, black, blue);
 
     //cubo da casa
-    drawLine(150, 100, 350, 100, black, black, blue);
-    drawLine(100, 200, 400, 200, black, black, blue);
-    drawLine(150, 100, 150, 200, black, black, blue);
-    drawLine(350, 100, 350, 200, black, black, blue);
+    drawLine(0, 0, 150, 0, black, black, blue);
+    drawLine(0, 0, 0, 90, black, black, blue);
+    drawLine(150, 0, 150, 90, black, black, blue);
+    drawLine(0, 90, 150, 90, black, black, blue);
 
     //porta da casa
-    drawLine(200, 100, 200, 150, black, black, blue);
-    drawLine(250, 100, 250, 150, black, black, blue);
-    drawLine(200, 150, 250, 150, black, black, blue);
+    drawLine(20, 0, 20, 60, black, black, blue);
+    drawLine(60, 0, 60, 60, black, black, blue);
+    drawLine(20, 60, 60, 60, black, black, blue);
 
     //telhado da casa
-    drawLine(100, 200, 250, 300, black, black, blue);
-    drawLine(400, 200, 250, 300, black, black, blue);
+    drawLine(0, 90, 75, 150, black, black, blue);
+    drawLine(150, 90, 75, 150, black, black, blue);
 
     //janela 
-    drawLine(280, 120, 320, 120, black, black, blue);
-    drawLine(280, 180, 320, 180, black, black, blue);
-    drawLine(280, 120, 280, 180, black, black, blue);
-    drawLine(320, 120, 320, 180, black, black, blue);
-    drawLine(300, 120, 300, 180, black, black, blue);
-    drawLine(280, 150, 320, 150, black, black, blue);
+    drawLine(90, 20, 130, 20, black, black, blue);
+    drawLine(90, 20, 90, 60, black, black, blue);
+    drawLine(130, 20, 130, 60, black, black, blue);
+    drawLine(90, 60, 130, 60, black, black, blue);
+    drawLine(90, 40, 130, 40, black, black, blue);
+    drawLine(110, 20, 110, 60, black, black, blue);
+
     saveIMg();
 
     return 0;
